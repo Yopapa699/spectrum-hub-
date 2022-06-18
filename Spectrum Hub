@@ -1019,11 +1019,11 @@ Tab1Section:NewButton("Brookhaven trolling gui", "it's Fe lol", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/iMP3K7gB"))()
 end)
 
-Tab1Section:NewButton("be a parkour ninja", "credits to xMiles Games", function()
+Tab1Section:NewButton("be a parkour ninja", "credits to Hitbox script", function()
    game.StarterGui:SetCore("SendNotification", {
-    Title = "Subscribe To xMiles_Games";
-    Text = "Subscribe For More Scripts"; -- what the text says (ofc)
-    Duration = 60;
+    Title = "unsubscribe To xMiles_Games";
+    Text = "Pls do not trust the Ferest Z executor cuz Fz has fucking retard developers and they all niggas"; -- what the text says (ofc)
+    Duration = 69420;
 })
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -1053,13 +1053,13 @@ label.TextScaled = true
 label.TextSize = 5.000
 label.TextWrapped = true
 
-Hitbox.Name = "Hit box"
+Hitbox.Name = "Hitbox"
 Hitbox.Parent = main
 Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 Hitbox.Position = UDim2.new(0.114285722, 0, 0.372448981, 0)
 Hitbox.Size = UDim2.new(0, 90, 0, 40)
 Hitbox.Font = Enum.Font.SourceSans
-Hitbox.Text = "Hit box"
+Hitbox.Text = "Hitbox"
 Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
 Hitbox.TextSize = 40.000
 Hitbox.MouseButton1Down:connect(function()
@@ -1089,4 +1089,28 @@ end)
 
 Tab1Section:NewButton("workout Island", "credits to ghostplayer", function()
    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\72\74\77\50\85\52\72\51\39\41\41\40\41\10")()
+end)
+
+Tab2Section:NewButton("ninja tycoon", "credits to their team", function()
+   loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+end)
+
+Tab1Section:NewButton("Da mimic", "credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ZSIOffical/I-D-K/main/mimic.lua"))()
+end)
+
+Tab1Section:NewButton("natural disasters V2", "credits to Owner", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
+end)
+
+Tab2Section:NewButton("Area 51", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/TtdvYAKU'))()
+end)
+
+Tab1Section:NewButton("Eating simulator 2", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/JK0DQufk'))()
+end)
+
+Tab1Section:NewButton("RTX V3", "WORKS ON ALL GAMES", function()
+   loadstring(game:HttpGet(('https://pastebin.com/raw/7rrgE4XL'),true))()
 end)
