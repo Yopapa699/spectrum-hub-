@@ -1099,7 +1099,7 @@ Tab1Section:NewButton("Da mimic", "credits to Owner", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZSIOffical/I-D-K/main/mimic.lua"))()
 end)
 
-Tab1Section:NewButton("natural disasters V2", "credits to Owner", function()
+Tab1Section:NewButton("moonhub", "credits to Owner", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
 end)
 
