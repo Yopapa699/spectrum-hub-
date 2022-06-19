@@ -9,7 +9,7 @@ local Tab2 = Window:NewTab("others")
 local Tab2Section = Tab2:NewSection("HUBS")
 
 local Tab3 = Window:NewTab("hacks Hub")
-local Tab3Section = Tab3:NewSection("op")
+local Tab3Section = Tab3:NewSection("OP")
 
 local Tab4 = Window:NewTab("Fe scripts")
 local Tab4Section = Tab4:NewSection("these are all Fe scripts")
@@ -1144,4 +1144,8 @@ end)()
 end
 end)()
 end)
+end)
+
+Tab2Section:NewButton("build a boat gui", "for autofarm", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/BABFT/main/Ruby%20Hub", true))()
 end)
