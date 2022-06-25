@@ -9,7 +9,7 @@ local Tab2 = Window:NewTab("others")
 local Tab2Section = Tab2:NewSection("HUBS")
 
 local Tab3 = Window:NewTab("hacks Hub")
-local Tab3Section = Tab3:NewSection("OP")
+local Tab3Section = Tab3:NewSection("Basic Hacks")
 
 local Tab4 = Window:NewTab("Fe scripts")
 local Tab4Section = Tab4:NewSection("these are all Fe scripts")
@@ -21,10 +21,7 @@ local Tab6 = Window:NewTab("Credits")
 local Tab6Section = Tab6:NewSection("this hub was made by SadGuy#6969")
 local Tab6Section = Tab6:NewSection("Join our discord for updates")
 local Tab6Section = Tab6:NewSection("don't forget to credit to me when you showcase")
-
-Tab1Section:NewButton("bedwars", "softbed from YZHacker", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
-end)
+local Tab6Section = Tab6:NewSection("credits to GamingScripter#9250 for kavo tutorial")
 
 Tab1Section:NewButton("da hood", "nukermode", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
@@ -1860,7 +1857,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Title = "Spectrum Discord";
  Text = "your discord invite link has been copied";
  Icon = "https://www.roblox.com/library/10017572891/Discord";
- Duration = 20;
+ Duration = 15;
  Button1 = "Ok";
  Button2 = "Thanks";
  Callback = NotificationBindable;
@@ -1869,4 +1866,67 @@ end)
 
 Tab4Section:NewButton("Fe depression", "credits to Im Patrick", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/UXP3Ap79",true))()
+end)
+
+Tab4Section:NewButton("Fe Ball need Fly V3 gui", "go watch a tutorial from yt", function()
+   local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local Camera = workspace.CurrentCamera
+
+local SPEED_MULTIPLIER = 30
+local JUMP_POWER = 60
+local JUMP_GAP = 9.5
+
+local character = game.Players.LocalPlayer.Character
+
+for i,v in ipairs(character:GetDescendants()) do
+   if v:IsA("BasePart") then
+       v.CanCollide = false
+   end
+end
+
+local ball = character.HumanoidRootPart
+ball.Shape = Enum.PartType.Ball
+ball.Size = Vector3.new(5,5,5)
+local humanoid = character:WaitForChild("Humanoid")
+local params = RaycastParams.new()
+params.FilterType = Enum.RaycastFilterType.Blacklist
+params.FilterDescendantsInstances = {character}
+
+local tc = RunService.RenderStepped:Connect(function(delta)
+   ball.CanCollide = true
+   humanoid.PlatformStand = true
+if UserInputService:GetFocusedTextBox() then return end
+if UserInputService:IsKeyDown("C") then
+ball.RotVelocity -= Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
+end
+if UserInputService:IsKeyDown("V") then
+ball.RotVelocity -= Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
+end
+if UserInputService:IsKeyDown("X") then
+ball.RotVelocity += Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
+end
+if UserInputService:IsKeyDown("Z") then
+ball.RotVelocity += Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
+end
+--ball.RotVelocity = ball.RotVelocity - Vector3.new(0,ball.RotVelocity.Y/50,0)
+end)
+
+UserInputService.JumpRequest:Connect(function()
+local result = workspace:Raycast(
+ball.Position,
+Vector3.new(
+0,
+-((ball.Size.Y/2)+JUMP_GAP),
+0
+),
+params
+)
+if result then
+ball.Velocity = ball.Velocity + Vector3.new(0,JUMP_POWER,0)
+end
+end)
+
+Camera.CameraSubject = ball
+humanoid.Died:Connect(function() tc:Disconnect() end)
 end)
