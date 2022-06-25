@@ -1861,3 +1861,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
  })
 end)
+
+Tab4Section:NewButton("Fe depression", "credits to Im Patrick", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/UXP3Ap79",true))()
+end)
