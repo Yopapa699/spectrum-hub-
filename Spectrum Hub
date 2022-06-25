@@ -17,6 +17,11 @@ local Tab4Section = Tab4:NewSection("these are all Fe scripts")
 local Tab5 = Window:NewTab("discord")
 local Tab5Section = Tab5:NewSection("Join our discord to get new updates")
 
+local Tab6 = Window:NewTab("Credits")
+local Tab6Section = Tab6:NewSection("this hub was made by SadGuy#6969")
+local Tab6Section = Tab6:NewSection("Join our discord for updates")
+local Tab6Section = Tab6:NewSection("don't forget to credit to me when you showcase")
+
 Tab1Section:NewButton("bedwars", "softbed from YZHacker", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
 end)
@@ -1852,7 +1857,7 @@ Tab5Section:NewButton("Join now :)", "pog", function()
 NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
- Title = "spectrum discord";
+ Title = "Spectrum Discord";
  Text = "your discord invite link has been copied";
  Icon = "https://www.roblox.com/library/10017572891/Discord";
  Duration = 20;
