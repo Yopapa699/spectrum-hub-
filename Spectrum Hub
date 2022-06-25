@@ -14,6 +14,8 @@ local Tab3Section = Tab3:NewSection("OP")
 local Tab4 = Window:NewTab("Fe scripts")
 local Tab4Section = Tab4:NewSection("these are all Fe scripts")
 
+local Tab5 = Window:NewTab("discord")
+local Tab5Section = Tab5:NewSection("Join our discord to get new updates")
 
 Tab1Section:NewButton("bedwars", "softbed from YZHacker", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/ELCkygpv", true))()
@@ -1842,4 +1844,20 @@ srv.RenderStepped:Wait()
 end
 end)()
 --Created using Nexo Animator V4
+end)
+
+Tab5Section:NewButton("Join now :)", "pog", function()
+   setclipboard('https://discord.gg/G8bgdcwEAz')
+   local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "your discord link has been copied";
+ Text = "Check your clipboard";
+ Icon = "https://www.roblox.com/library/9681945858/Spectrum";
+ Duration = 20;
+ Button1 = "Ok";
+ Button2 = "Thanks";
+ Callback = NotificationBindable;
+ })
 end)
