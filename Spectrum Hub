@@ -1852,9 +1852,9 @@ Tab5Section:NewButton("Join now :)", "pog", function()
 NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
- Title = "your discord link has been copied";
- Text = "Check your clipboard";
- Icon = "https://www.roblox.com/library/9681945858/Spectrum";
+ Title = "spectrum discord";
+ Text = "your discord invite link has been copied";
+ Icon = "https://www.roblox.com/library/10017572891/Discord";
  Duration = 20;
  Button1 = "Ok";
  Button2 = "Thanks";
