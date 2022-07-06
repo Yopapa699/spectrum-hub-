@@ -18,7 +18,7 @@ local Tab5 = Window:NewTab("discord")
 local Tab5Section = Tab5:NewSection("Join our discord to get new updates")
 
 local Tab6 = Window:NewTab("Credits")
-local Tab6Section = Tab6:NewSection("this hub was made by SadGuy#6969")
+local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8067")
 local Tab6Section = Tab6:NewSection("Join our discord for updates")
 local Tab6Section = Tab6:NewSection("don't forget to credit to me when you showcase")
 local Tab6Section = Tab6:NewSection("credits to GamingScripter#9250 for kavo tutorial")
