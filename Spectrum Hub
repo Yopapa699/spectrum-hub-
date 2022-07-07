@@ -6,7 +6,7 @@ local Tab1 = Window:NewTab("MAIN")
 local Tab1Section = Tab1:NewSection("scripts")
 
 local Tab2 = Window:NewTab("others")
-local Tab2Section = Tab2:NewSection("HUBS")
+local Tab2Section = Tab2:NewSection("scripts")
 
 local Tab3 = Window:NewTab("hacks Hub")
 local Tab3Section = Tab3:NewSection("Basic Hacks")
@@ -14,16 +14,15 @@ local Tab3Section = Tab3:NewSection("Basic Hacks")
 local Tab4 = Window:NewTab("Fe scripts")
 local Tab4Section = Tab4:NewSection("these are all Fe scripts")
 
-local Tab5 = Window:NewTab("discord")
+local Tab5 = Window:NewTab("Discord")
 local Tab5Section = Tab5:NewSection("Join our discord to get new updates")
 
 local Tab6 = Window:NewTab("Credits")
-local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8067")
+local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8091")
 local Tab6Section = Tab6:NewSection("Join our discord for updates")
-local Tab6Section = Tab6:NewSection("don't forget to credit to me when you showcase")
 local Tab6Section = Tab6:NewSection("credits to GamingScripter#9250 for kavo tutorial")
 
-Tab1Section:NewButton("da hood", "nukermode", function()
+Tab1Section:NewButton("da hood", "credits to nukermode", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
 end)
 
@@ -66,13 +65,13 @@ end)
 
 Tab3Section:NewToggle("walkspeed", "sussyspeed", function(state)
     if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
     end
 end)
 
-Tab2Section:NewButton("FE upsidedown", "XDDD", function()
+Tab2Section:NewButton("FE upsidedown", "Funi", function()
     local lp = game:GetService("Players").LocalPlayer
 local c = lp.Character
 local hrp0 = c:FindFirstChild("HumanoidRootPart")
@@ -92,7 +91,7 @@ while h:Wait() and c and c.Parent do
 end
 end)
 
-Tab2Section:NewButton("Extream Hub", "OP HUB", function()
+Tab2Section:NewButton("Extream Hub", "this hub needs a key", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
 end)
 
@@ -145,10 +144,6 @@ Tab1Section:NewButton("shindo life V2", "so opppp", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PremierHub/Data/main/code.lua"))()
 end)
 
-Tab1Section:NewButton("da hood", "for pc and mobile", function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-end)
-
 Tab2Section:NewButton("V HUB", "eeeeee", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
 end)
@@ -185,7 +180,7 @@ Tab1Section:NewButton("nukermode crash", "the most cheapest crash on the entire 
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/nukermode/main/Crashbeta-obfuscated.lua"))() 
 end)
 
-Tab1Section:NewButton("faded", "for da hood", function()
+Tab1Section:NewButton("faded for da hood", "for da hood", function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 end)
 
@@ -213,7 +208,7 @@ Tab1Section:NewButton("arsenal by xMiles", "Credits to xMiles", function()
     game.StarterGui:SetCore("SendNotification", {
     Title = "Arsenal OP Script V1";
     Text = "Made by xMiles_Games"; -- what the text says (ofc)
-    Duration = 60;
+    Duration = 30;
 })
 wait(1)
 game.StarterGui:SetCore("SendNotification", {
@@ -272,10 +267,10 @@ end
 
 local c = 1 function zigzag(X)  return math.acos(math.cos(X * math.pi)) / math.pi end game:GetService("RunService").RenderStepped:Connect(function()  if game.Workspace.Camera:FindFirstChild('Arms') then   for i,v in pairs(game.Workspace.Camera.Arms:GetDescendants()) do    if v.ClassName == 'MeshPart' then      v.Color = Color3.fromHSV(zigzag(c),1,1)     c = c + .0001    end   end  end end)
 net = true -- if false = do nothing
-notify = true -- set this to false if u don't want to see notiflication
+notify = false -- set this to false if u don't want to see notiflication
 end)
 
-Tab2Section:NewButton("uzu scripts", "credits to uzu", function()
+Tab2Section:NewButton("uzu hub", "credits to uzu", function()
    loadstring(game:HttpGet("https://rawscripts.net/raw/loader_1038"))()
 end)
 
@@ -332,7 +327,7 @@ Tab1Section:NewButton("breaking point", "op", function()
  loadstring(game:GetObjects("rbxassetid://7228968882")[1].Source)()
 end)
 
-Tab4Section:NewButton("fe fling gun", "it's fun lmao", function()
+Tab4Section:NewButton("Fe fling gun", "it's fun lmao", function()
    local player = game.Players.LocalPlayer
 local character1 = player.Character
 local mouse = player:GetMouse()
@@ -1025,9 +1020,9 @@ end)
 
 Tab1Section:NewButton("be a parkour ninja", "credits to Hitbox script", function()
    game.StarterGui:SetCore("SendNotification", {
-    Title = "unsubscribe To xMiles_Games";
-    Text = "Pls do not trust the Ferest Z executor cuz Fz has fucking retard developers and they all niggas"; -- what the text says (ofc)
-    Duration = 69420;
+    Title = "Subscribe To xMiles_Games";
+    Text = "PLS DO NOT TRUST ANY FUCKING NEW EXECUTORS CUZ ALMOST NEW EXECUTORS ARE RETARDED + VIRUSES"; -- what the text says (ofc)
+    Duration = 69;
 })
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -1848,19 +1843,13 @@ end)()
 --Created using Nexo Animator V4
 end)
 
-Tab5Section:NewButton("Join now :)", "pog", function()
+Tab5Section:NewButton("Click to copy our discord link", "pog", function()
    setclipboard('https://discord.gg/G8bgdcwEAz')
-   local NotificationBindable = Instance.new("BindableFunction")
-NotificationBindable.OnInvoke = callback
---
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Spectrum Discord";
  Text = "your discord invite link has been copied";
  Icon = "https://www.roblox.com/library/10017572891/Discord";
  Duration = 15;
- Button1 = "Ok";
- Button2 = "Thanks";
- Callback = NotificationBindable;
  })
 end)
 
@@ -1929,4 +1918,1213 @@ end)
 
 Camera.CameraSubject = ball
 humanoid.Died:Connect(function() tc:Disconnect() end)
+end)
+
+Tab2Section:NewButton("ninja tycoon autofarm", "credits to thei team", function()
+   local Library =
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/preztel/AzureLibrary/master/uilib.lua", true))()
+
+local Main = Library:CreateTab("Ninja Simulator", "Functions", false)
+
+Main:CreateToggle(
+   "Auto Quiz Solver",
+   function(kdss)
+       _G.toggles1dss = kdss or false
+       while _G.toggles1dss and wait(2) do
+           for i, v in pairs(game:GetService("Workspace")["TimedEvent_Quiz"]:GetDescendants()) do
+               if string.find(v.Name, "AnswerTarget") and v:FindFirstChild("OnDied") then
+                   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                       v.HumanoidRootPart.CFrame + v.HumanoidRootPart.CFrame.lookVector * -1
+               end
+           end
+           wait(0.4)
+           plr = game.Players.LocalPlayer.Character
+           game:GetService("Workspace")[plr.Name].Combat.Attack:FireServer()
+           local N = game:GetService("VirtualInputManager")
+           N:SendKeyEvent(true, "F", false, game)
+       end
+   end
+)
+Main:CreateToggle(
+   "Auto Click",
+   function(kd55fs)
+       _G.toggle5fs21 = kd55fs or false
+       game:GetService("RunService").Stepped:connect(
+           function()
+               if _G.toggle5fs21 then
+                   fireclickdetector(
+                       game.workspace["Zednov's Tycoon Kit"].Tycoons[game.Players.LocalPlayer.Team.Name].PurchasedObjects.Mine.Clicker.ClickDetector
+                   )
+               end
+           end
+       )
+   end
+)
+Main:CreateButton(
+   "Subscribe To xMiles",
+   function()
+       setclipboard("https://discord.com/invite/sdUSPyY65T")
+   end
+)
+Main:CreateButton(
+   "Join My Discord",
+   function()
+       setclipboard("https://discord.com/invite/sdUSPyY65T")
+   end
+)
+end)
+
+Tab4Section:NewButton("wall climbing Fe", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/jLVhHEVW'))()
+end)
+
+Tab1Section:NewButton("walk and run", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/72EKEHqC'))()
+end)
+
+Tab2Section:NewButton("speed simulator 2", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/JmvEwiAW'))()
+end)
+
+Tab1Section:NewButton("clicker simulator", "credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
+end)
+
+Tab2Section:NewButton("Big paintball kill all", "Credits to the Owner", function()
+   getgenv().Enabled = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Releases/main/Big-Paintball/KillAll.lua"))()
+end)
+
+Tab1Section:NewButton("Cars trading", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/vhNFzwzE'))()
+end)
+
+Tab2Section:NewButton("KING LEGACY", "Credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/PainfulDestroyer/Roblox/main/King%20Legacy"))()
+end)
+
+Tab1Section:NewButton("pet simulator", "credits to BK", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+end)
+
+Tab4Section:NewButton("Fe creeper crawler", "really good for trolling xd", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/dNcNFaBJ"))()
+end)
+
+Tab1Section:NewButton("Sharkbite", "credits to owner", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua'))()
+end)
+
+Tab2Section:NewButton("Rap Battles gui", "Credits to Owner", function()
+   -- Objects
+
+local ARBkiller = Instance.new("ScreenGui")
+local Topframe = Instance.new("Frame")
+local Mainframe = Instance.new("Frame")
+local KillSpec = Instance.new("TextButton")
+local NameBox = Instance.new("TextBox")
+local KillAllSpec = Instance.new("TextButton")
+local KillStage = Instance.new("TextButton")
+local KillAllStage = Instance.new("TextButton")
+local HatSpam = Instance.new("TextButton")
+local HatSpamLabel = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local KillManualFrame = Instance.new("Frame")
+local GotoStage = Instance.new("TextButton")
+local ManualNameBox = Instance.new("TextBox")
+local GotoFloor = Instance.new("TextButton")
+local GotoDJbooth = Instance.new("TextButton")
+local SpamHatsManual = Instance.new("TextButton")
+local BringAll = Instance.new("TextButton")
+local BringPlayer = Instance.new("TextButton")
+local TabsTab = Instance.new("TextButton")
+local TabsFrame = Instance.new("Frame")
+local KillPlayersAutoTab = Instance.new("TextButton")
+local KillPlayersTab = Instance.new("TextButton")
+local ChooseWinnerTab = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ChooseWinnerTab_2 = Instance.new("Frame")
+local rapper1 = Instance.new("TextButton")
+local rapper2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+
+-- Properties
+
+ARBkiller.Name = "ARBkiller"
+ARBkiller.Parent = game.CoreGui
+
+Topframe.Name = "Topframe"
+Topframe.Parent = ARBkiller
+Topframe.BackgroundColor3 = Color3.new(0, 0, 0)
+Topframe.BorderColor3 = Color3.new(0, 0, 0)
+Topframe.Position = UDim2.new(0.491096556, 0, 0.279112756, 0)
+Topframe.Size = UDim2.new(0, 305, 0, 22)
+Topframe.Active = true
+Topframe.Draggable = true
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = Topframe
+Mainframe.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+Mainframe.BorderColor3 = Color3.new(0, 0, 0)
+Mainframe.Position = UDim2.new(0, 0, 1, 0)
+Mainframe.Size = UDim2.new(0, 305, 0, 152)
+
+KillSpec.Name = "KillSpec"
+KillSpec.Parent = Mainframe
+KillSpec.BackgroundColor3 = Color3.new(0, 0, 0)
+KillSpec.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillSpec.Position = UDim2.new(0.0524590164, 0, 0.375, 0)
+KillSpec.Size = UDim2.new(0, 131, 0, 26)
+KillSpec.Visible = false
+KillSpec.Font = Enum.Font.SourceSans
+KillSpec.Text = "Kill Spectator"
+KillSpec.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillSpec.TextSize = 14
+KillSpec.Visible = false
+KillSpec.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.145134, 60.9199867, -213.246567)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.1994705, 59.4499855, -213.812958)
+end)
+
+KillSpec.MouseButton1Click:Connect(function()
+	wait(.3)
+	for i=1, 17 do
+	for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+game.Players[NameBox.Text].character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+NameBox.Name = "NameBox"
+NameBox.Parent = Mainframe
+NameBox.BackgroundColor3 = Color3.new(0, 0, 0)
+NameBox.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+NameBox.Position = UDim2.new(0.0524590164, 0, 0.0723684281, 0)
+NameBox.Size = UDim2.new(0, 273, 0, 26)
+NameBox.Visible = false
+NameBox.Font = Enum.Font.SourceSans
+NameBox.Text = "Player Name"
+NameBox.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+NameBox.TextSize = 14
+NameBox.Visible = false
+
+KillAllSpec.Name = "KillAllSpec"
+KillAllSpec.Parent = Mainframe
+KillAllSpec.BackgroundColor3 = Color3.new(0, 0, 0)
+KillAllSpec.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillAllSpec.Position = UDim2.new(0.0524590164, 0, 0.618421078, 0)
+KillAllSpec.Size = UDim2.new(0, 131, 0, 26)
+KillAllSpec.Visible = false
+KillAllSpec.Font = Enum.Font.SourceSans
+KillAllSpec.Text = "Kill All Spectators"
+KillAllSpec.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillAllSpec.TextSize = 14
+KillAllSpec.Visible = false
+KillAllSpec.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.145134, 60.9199867, -213.246567)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.1994705, 59.4499855, -213.812958)
+end)
+
+KillAllSpec.MouseButton1Click:Connect(function()
+	for i=1, 17 do 
+		for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+v.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+KillStage.Name = "KillStage"
+KillStage.Parent = Mainframe
+KillStage.BackgroundColor3 = Color3.new(0, 0, 0)
+KillStage.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillStage.Position = UDim2.new(0.521311462, 0, 0.375, 0)
+KillStage.Size = UDim2.new(0, 131, 0, 26)
+KillStage.Visible = false
+KillStage.Font = Enum.Font.SourceSans
+KillStage.Text = "Kill DJ/Rapper"
+KillStage.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillStage.TextSize = 14
+KillStage.Visible = false
+KillStage.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-122.46907, 57.5254517, -241.127228)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.217644, 19.019495, -238.695541)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(166.392715, 34.5401344, -223.55719)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(116.164017, 91.3896332, -204.526123)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-70.4613266, 59.5788231, -214.690781)
+end)
+
+KillStage.MouseButton1Click:Connect(function()
+	wait(.9)
+	for i=1, 17 do
+	for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+game.Players[NameBox.Text].character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+KillAllStage.Name = "KillAllStage"
+KillAllStage.Parent = Mainframe
+KillAllStage.BackgroundColor3 = Color3.new(0, 0, 0)
+KillAllStage.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillAllStage.Position = UDim2.new(0.521311462, 0, 0.618421078, 0)
+KillAllStage.Size = UDim2.new(0, 131, 0, 26)
+KillAllStage.Visible = false
+KillAllStage.Font = Enum.Font.SourceSans
+KillAllStage.Text = "Kill All DJs and Rappers"
+KillAllStage.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillAllStage.TextSize = 14
+KillAllStage.Visible = false
+KillAllStage.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-122.46907, 57.5254517, -241.127228)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.217644, 19.019495, -238.695541)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(166.392715, 34.5401344, -223.55719)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(116.164017, 91.3896332, -204.526123)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-70.4613266, 59.5788231, -214.690781)
+end)
+
+KillAllStage.MouseButton1Click:Connect(function()
+	wait(.9)
+	for i=1, 17 do 
+		for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+v.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+HatSpam.Name = "HatSpam"
+HatSpam.Parent = Mainframe
+HatSpam.BackgroundColor3 = Color3.new(0, 0, 0)
+HatSpam.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+HatSpam.Position = UDim2.new(0.222684026, 0, 0.177907586, 0)
+HatSpam.Size = UDim2.new(0, 170, 0, 26)
+HatSpam.Font = Enum.Font.SourceSans
+HatSpam.Text = "Hat Spam"
+HatSpam.TextColor3 = Color3.new(0.0392157, 0.470588, 1)
+HatSpam.TextSize = 14
+HatSpam.MouseButton1Click:Connect(function()
+		for i=1,500 do
+print (i)
+game.Workspace.Hats:FireServer("Dominus Empyreus'", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Backwards Baseball Cap", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Acheo's Pot", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Golden Headphones", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Black Fedora", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end)
+
+HatSpam.MouseButton1Click:Connect(function()
+	KillStage.Visible = true
+	KillSpec.Visible = true
+	KillAllSpec.Visible = true
+	KillAllStage.Visible = true
+	NameBox.Visible = true
+	HatSpam.Visible = false
+	HatSpamLabel.Visible = false
+end)
+
+HatSpamLabel.Name = "HatSpamLabel"
+HatSpamLabel.Parent = Mainframe
+HatSpamLabel.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+HatSpamLabel.BorderSizePixel = 0
+HatSpamLabel.Position = UDim2.new(0.174227983, 0, 0.500207067, 0)
+HatSpamLabel.Size = UDim2.new(0, 200, 0, 50)
+HatSpamLabel.Font = Enum.Font.Arial
+HatSpamLabel.Text = "Click Hat Spam to continue "
+HatSpamLabel.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+HatSpamLabel.TextSize = 14
+
+TextLabel.Parent = Topframe
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.339992374, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 98, 0, 22)
+TextLabel.Text = "ARB killer"
+TextLabel.TextColor3 = Color3.new(0.0470588, 0.458824, 0.996078)
+TextLabel.TextSize = 14
+
+KillManualFrame.Name = "KillManualFrame"
+KillManualFrame.Parent = Topframe
+KillManualFrame.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+KillManualFrame.BorderColor3 = Color3.new(0, 0, 0)
+KillManualFrame.Position = UDim2.new(0, 0, 0.999999821, 0)
+KillManualFrame.Size = UDim2.new(0, 305, 0, 152)
+
+GotoStage.Name = "GotoStage"
+GotoStage.Parent = KillManualFrame
+GotoStage.BackgroundColor3 = Color3.new(0, 0, 0)
+GotoStage.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoStage.Position = UDim2.new(0.0524590164, 0, 0.289473683, 0)
+GotoStage.Size = UDim2.new(0, 129, 0, 26)
+GotoStage.Font = Enum.Font.SourceSans
+GotoStage.Text = "TP to Stage"
+GotoStage.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoStage.TextSize = 14
+GotoStage.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.145134, 60.9199867, -213.246567)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.1994705, 59.4499855, -213.812958)
+end)
+
+ManualNameBox.Name = "ManualNameBox"
+ManualNameBox.Parent = KillManualFrame
+ManualNameBox.BackgroundColor3 = Color3.new(0, 0, 0)
+ManualNameBox.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+ManualNameBox.Position = UDim2.new(0.0508196726, 0, 0.0789473653, 0)
+ManualNameBox.Size = UDim2.new(0, 275, 0, 24)
+ManualNameBox.Font = Enum.Font.SourceSans
+ManualNameBox.Text = "Player Name"
+ManualNameBox.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+ManualNameBox.TextSize = 14
+
+GotoFloor.Name = "GotoFloor"
+GotoFloor.Parent = KillManualFrame
+GotoFloor.BackgroundColor3 = Color3.new(0, 0, 0)
+GotoFloor.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoFloor.Position = UDim2.new(0.0524590164, 0, 0.5, 0)
+GotoFloor.Size = UDim2.new(0, 129, 0, 26)
+GotoFloor.Font = Enum.Font.SourceSans
+GotoFloor.Text = "TP to floor"
+GotoFloor.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoFloor.TextSize = 14
+GotoFloor.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-122.46907, 57.5254517, -241.127228)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-107.217644, 19.019495, -238.695541)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(166.392715, 34.5401344, -223.55719)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(116.164017, 91.3896332, -204.526123)
+	wait(.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-70.4613266, 59.5788231, -214.690781)
+end)
+
+GotoDJbooth.Name = "GotoDJbooth"
+GotoDJbooth.Parent = KillManualFrame
+GotoDJbooth.BackgroundColor3 = Color3.new(0, 0, 0)
+GotoDJbooth.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoDJbooth.Position = UDim2.new(0.53114754, 0, 0.289473683, 0)
+GotoDJbooth.Size = UDim2.new(0, 129, 0, 26)
+GotoDJbooth.Font = Enum.Font.SourceSans
+GotoDJbooth.Text = "TP to DJ Booth"
+GotoDJbooth.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+GotoDJbooth.TextSize = 14
+GotoDJbooth.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88.145134, 60.9199867, -213.246567)
+end)
+
+SpamHatsManual.Name = "SpamHatsManual"
+SpamHatsManual.Parent = KillManualFrame
+SpamHatsManual.BackgroundColor3 = Color3.new(0, 0, 0)
+SpamHatsManual.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+SpamHatsManual.Position = UDim2.new(0.53114754, 0, 0.5, 0)
+SpamHatsManual.Size = UDim2.new(0, 129, 0, 26)
+SpamHatsManual.Font = Enum.Font.SourceSans
+SpamHatsManual.Text = "Spam Hats"
+SpamHatsManual.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+SpamHatsManual.TextSize = 14
+SpamHatsManual.MouseButton1Click:Connect(function()
+			for i=1,500 do
+print (i)
+game.Workspace.Hats:FireServer("Dominus Empyreus'", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Backwards Baseball Cap", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Acheo's Pot", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Golden Headphones", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+wait(0.25)
+game.Workspace.Hats:FireServer("Black Fedora", 0)
+wait(0.5)
+for index, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if child.ClassName == "Hat" or child.ClassName == "Accessory" then
+if child.Handle:FindFirstChild("Mesh") then
+child.Handle.Mesh.Parent = nil
+child.Parent = game.Workspace
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end)
+
+BringAll.Name = "BringAll"
+BringAll.Parent = KillManualFrame
+BringAll.BackgroundColor3 = Color3.new(0, 0, 0)
+BringAll.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+BringAll.Position = UDim2.new(0.0524590164, 0, 0.710526347, 0)
+BringAll.Size = UDim2.new(0, 129, 0, 26)
+BringAll.Font = Enum.Font.SourceSans
+BringAll.Text = "Bring All"
+BringAll.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+BringAll.TextSize = 14
+BringAll.MouseButton1Click:Connect(function()
+	for i=1, 17 do 
+	for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+v.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+BringPlayer.Name = "BringPlayer"
+BringPlayer.Parent = KillManualFrame
+BringPlayer.BackgroundColor3 = Color3.new(0, 0, 0)
+BringPlayer.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+BringPlayer.Position = UDim2.new(0.53114754, 0, 0.710526347, 0)
+BringPlayer.Size = UDim2.new(0, 129, 0, 26)
+BringPlayer.Font = Enum.Font.SourceSans
+BringPlayer.Text = "Bring Player"
+BringPlayer.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+BringPlayer.TextSize = 14
+BringPlayer.MouseButton1Click:Connect(function()
+	for i=1, 17 do
+	for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+game.Players[ManualNameBox.Text].character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+end
+end
+end
+end)
+
+TabsTab.Name = "TabsTab"
+TabsTab.Parent = Topframe
+TabsTab.BackgroundColor3 = Color3.new(0, 0, 0)
+TabsTab.BorderColor3 = Color3.new(0.0470588, 0.458824, 0.996078)
+TabsTab.Size = UDim2.new(0, 24, 0, 22)
+TabsTab.Font = Enum.Font.ArialBold
+TabsTab.Text = "<"
+TabsTab.TextColor3 = Color3.new(0.0470588, 0.458824, 0.996078)
+TabsTab.TextSize = 14
+TabsTab.MouseButton1Click:connect(function()
+    if TabsFrame.Visible then
+        TabsTab.Text = "<"
+    else
+        TabsFrame.Visible = false
+        TabsTab.Text = ">"
+    end
+end)
+
+TabsTab.MouseButton1Click:Connect(function()
+    if TabsFrame.Visible == false then
+        TabsFrame.Visible = true
+    else
+        TabsFrame.Visible = false
+    end
+end)
+
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = Topframe
+TabsFrame.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+TabsFrame.BorderColor3 = Color3.new(0, 0, 0)
+TabsFrame.Position = UDim2.new(-0.413114756, 0, 1, 0)
+TabsFrame.Size = UDim2.new(0, 126, 0, 152)
+TabsFrame.Visible = false
+
+KillPlayersAutoTab.Name = "KillPlayersAutoTab"
+KillPlayersAutoTab.Parent = TabsFrame
+KillPlayersAutoTab.BackgroundColor3 = Color3.new(0, 0, 0)
+KillPlayersAutoTab.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillPlayersAutoTab.Position = UDim2.new(0.055555556, 0, 0.0263157859, 0)
+KillPlayersAutoTab.Size = UDim2.new(0, 113, 0, 20)
+KillPlayersAutoTab.Font = Enum.Font.Arial
+KillPlayersAutoTab.Text = "Kill Players (Auto)"
+KillPlayersAutoTab.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillPlayersAutoTab.TextSize = 14
+
+KillPlayersAutoTab.MouseButton1Click:Connect(function()
+	KillManualFrame.Visible = false
+	ChooseWinnerTab_2.Visible = false
+end)
+
+KillPlayersTab.Name = "KillPlayersTab"
+KillPlayersTab.Parent = TabsFrame
+KillPlayersTab.BackgroundColor3 = Color3.new(0, 0, 0)
+KillPlayersTab.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillPlayersTab.Position = UDim2.new(0.055555556, 0, 0.197368413, 0)
+KillPlayersTab.Size = UDim2.new(0, 113, 0, 20)
+KillPlayersTab.Font = Enum.Font.Arial
+KillPlayersTab.Text = "Kill Players"
+KillPlayersTab.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+KillPlayersTab.TextSize = 14
+
+KillPlayersTab.MouseButton1Click:Connect(function()
+	KillManualFrame.Visible = true
+	ChooseWinnerTab_2.Visible = false
+end)
+
+ChooseWinnerTab.Name = "ChooseWinnerTab"
+ChooseWinnerTab.Parent = TabsFrame
+ChooseWinnerTab.BackgroundColor3 = Color3.new(0, 0, 0)
+ChooseWinnerTab.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+ChooseWinnerTab.Position = UDim2.new(0.055555556, 0, 0.368421048, 0)
+ChooseWinnerTab.Size = UDim2.new(0, 113, 0, 20)
+ChooseWinnerTab.Font = Enum.Font.Arial
+ChooseWinnerTab.Text = "Choose Winner"
+ChooseWinnerTab.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+ChooseWinnerTab.TextSize = 14
+
+ChooseWinnerTab.MouseButton1Click:Connect(function()
+	KillManualFrame.Visible = false
+	ChooseWinnerTab_2.Visible = true
+end)
+
+TextLabel_2.Parent = TabsFrame
+TextLabel_2.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0555555522, 0, 0.565789461, 0)
+TextLabel_2.Size = UDim2.new(0, 113, 0, 58)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "Credits: areyoumadbro2033 (method), Psykek#3180 (GUI)"
+TextLabel_2.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+ChooseWinnerTab_2.Name = "ChooseWinnerTab"
+ChooseWinnerTab_2.Parent = Topframe
+ChooseWinnerTab_2.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+ChooseWinnerTab_2.BorderColor3 = Color3.new(0, 0, 0)
+ChooseWinnerTab_2.Position = UDim2.new(0, 0, 0.999999821, 0)
+ChooseWinnerTab_2.Size = UDim2.new(0, 305, 0, 152)
+
+rapper1.Name = "rapper1"
+rapper1.Parent = ChooseWinnerTab_2
+rapper1.BackgroundColor3 = Color3.new(0, 0, 0)
+rapper1.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+rapper1.Position = UDim2.new(0.0491803288, 0, 0.101973683, 0)
+rapper1.Size = UDim2.new(0, 129, 0, 101)
+rapper1.Font = Enum.Font.SourceSans
+rapper1.Text = ""
+rapper1.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+rapper1.TextSize = 14
+rapper1.MouseButton1Click:Connect(function()
+for i = 1,100000 do 
+   game.Workspace.Votes:FireServer(false,"p1")
+   game:GetService("RunService").Heartbeat:Wait()
+end
+end)
+
+rapper2.Name = "rapper2"
+rapper2.Parent = ChooseWinnerTab_2
+rapper2.BackgroundColor3 = Color3.new(0, 0, 0)
+rapper2.BorderColor3 = Color3.new(0.0470588, 0.458824, 1)
+rapper2.Position = UDim2.new(0.527868867, 0, 0.101973683, 0)
+rapper2.Size = UDim2.new(0, 129, 0, 101)
+rapper2.Font = Enum.Font.SourceSans
+rapper2.Text = ""
+rapper2.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+rapper2.TextSize = 14
+rapper2.MouseButton1Click:Connect(function()
+for i = 1,100000 do 
+   game.Workspace.Votes:FireServer(false,"p2")
+   game:GetService("RunService").Heartbeat:Wait()
+end
+end)
+
+TextLabel_3.Parent = ChooseWinnerTab_2
+TextLabel_3.BackgroundColor3 = Color3.new(0.0941177, 0.0941177, 0.0941177)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0491803288, 0, 0.809210539, 0)
+TextLabel_3.Size = UDim2.new(0, 275, 0, 21)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "Click the player you want to win. The more clicks, the more votes they will have."
+TextLabel_3.TextColor3 = Color3.new(0.0470588, 0.458824, 1)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+
+while true do
+rapper2.Text = game.Workspace.RapBattles.Rappers.player2.Value
+rapper1.Text = game.Workspace.RapBattles.Rappers.player1.Value
+wait(0.1)
+end
+end)
+
+Tab1Section:NewButton("Chaos need keyboard", "Credits to Owner", function()
+   --[[
+r - lock player
+q - shoot/hit locked player
+l - dupe tools
+v - minigun (dupped tools required)
+c - sniper rifle (dupped tools required)
+]]
+
+local Ctrl_click_tp = false
+local plrs = game:GetService'Players'
+local plr = plrs.LocalPlayer
+local mouse = plr:GetMouse()
+local rep = game:GetService'ReplicatedStorage'
+local uis = game:GetService'UserInputService'
+local ts = game:GetService'TweenService'
+local rs = game:GetService'RunService'.RenderStepped
+local function findplr(Target)
+    local name = Target
+    local found = false
+    for _,v in pairs(game.Players:GetPlayers()) do 
+        if not found and (v.Name:lower():sub(1,#name) == name:lower() or v.DisplayName:lower():sub(1,#name) == name:lower()) then
+            name = v
+            found = true
+        end
+    end
+    if name ~= nil and name ~= Target then
+        return name
+    end
+end
+local function Notify(title,text,duration)
+    game:GetService'StarterGui':SetCore('SendNotification',{
+    	Title = tostring(title),
+    	Text = tostring(text),
+    	Duration = tonumber(duration),
+    })
+end
+local function AddCd(tool,Cd)
+    local cd = Instance.new('IntValue',tool)
+    cd.Name = 'ClientCD'
+    game.Debris:AddItem(cd,Cd)
+end
+local function Shoot(firstPos,nextPos,Revolver)
+    if Revolver:FindFirstChild'Barrel' and Revolver.Barrel:FindFirstChild'Attachment' then
+    	if Revolver.Barrel.Attachment:FindFirstChild'Sound' then
+    		local SoundClone = Revolver.Barrel.Attachment.Sound:Clone()
+    		SoundClone.Name = 'Uncopy'
+    		SoundClone.Parent = Revolver.Barrel.Attachment
+    		SoundClone:Play()
+    		game.Debris:AddItem(SoundClone, 1)
+    	end
+    	local FilterTable = {}
+    	table.insert(FilterTable, plr.Character)
+    	table.insert(FilterTable, game.Workspace['Target Filter'])
+    	for _, v in pairs(game.Workspace:GetDescendants()) do
+    		if v.ClassName == 'Accessory' then
+    			table.insert(FilterTable, v)
+    		end
+    	end
+    	local a_1, a_2, a_3 = game.Workspace:FindPartOnRayWithIgnoreList(Ray.new(firstPos, (nextPos - firstPos).Unit * 100), FilterTable)
+    	local BulletCl = rep['Revolver Bullet']:Clone()
+    	game.Debris:AddItem(BulletCl, 1)
+    	BulletCl.Parent = game.Workspace['Target Filter']
+    	local mg = (firstPos - a_2).Magnitude
+    	BulletCl.Size = Vector3.new(0.2, 0.2, mg)
+    	BulletCl.CFrame = CFrame.new(firstPos, nextPos) * CFrame.new(0, 0, -mg / 2)
+    	ts:Create(BulletCl, TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
+    		Size = Vector3.new(0.05, 0.05, mg), 
+    		Transparency = 1
+    	}):Play()
+    	if a_1 then
+    		local expPart = Instance.new'Part'
+    		game.Debris:AddItem(expPart, 2)
+    		expPart.Name = 'Exploding Neon Part'
+    		expPart.Anchored = true
+    		expPart.CanCollide = false
+    		expPart.Shape = 'Ball'
+    		expPart.Material = Enum.Material.Neon
+    		expPart.BrickColor = BulletCl.BrickColor
+    		expPart.Size = Vector3.new(0.1, 0.1, 0.1)
+    		expPart.Parent = game.Workspace['Target Filter']
+    		expPart.Position = a_2
+    		ts:Create(expPart, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
+    			Size = Vector3.new(2, 2, 2), 
+    			Transparency = 1
+    		}):Play()
+    		if Revolver:FindFirstChild'DamageRemote' and a_1.Parent:FindFirstChild'Humanoid' then
+    			Revolver.DamageRemote:FireServer(a_1.Parent.Humanoid)
+    		end
+    	end
+    end
+end
+mouse.Button1Down:connect(function()
+    if not uis:IsKeyDown(Enum.KeyCode.LeftControl) then return end if not mouse.Hit then return end 
+    if plr.Character and plr.Character:FindFirstChild'HumanoidRootPart' then
+        plr.Character:FindFirstChild'HumanoidRootPart'.CFrame = mouse.Hit + Vector3.new(0,5,0)
+    end
+end)
+local tar
+plr:GetMouse().KeyDown:Connect(function(key)
+    if key == 'r' then
+        tar = nil
+        for _,v in next,workspace:GetDescendants() do
+            if v.Name == 'SelectedPlayer' then
+                v:Destroy()
+            end
+        end
+        local n_plr, dist
+        for _, v in pairs(game.Players:GetPlayers()) do
+            if v ~= plr and plr.Character and plr.Character:FindFirstChild'HumanoidRootPart' then
+                local distance = v:DistanceFromCharacter(plr.Character.HumanoidRootPart.Position)
+                if v.Character and (not dist or distance <= dist) and v.Character:FindFirstChildOfClass'Humanoid' and v.Character:FindFirstChildOfClass'Humanoid'.Health>0 and v.Character:FindFirstChild'HumanoidRootPart' then
+                    dist = distance
+                    n_plr = v
+                end
+            end
+        end
+        local sp = Instance.new('SelectionBox',n_plr.Character.HumanoidRootPart)
+        sp.Name = 'SelectedPlayer'
+        sp.Adornee = n_plr.Character.HumanoidRootPart
+        tar = n_plr
+    elseif key == 'q' and tar and plr.Character then
+        for _,v in next,plr.Character:GetDescendants() do
+            if v:IsA'Tool' and v.Name ~= 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'DamageRemote' and v:FindFirstChild'Cooldown' and tar and tar.Character and tar.Character:FindFirstChildOfClass'Humanoid' then
+                AddCd(v,v.Cooldown.Value)
+                v.DamageRemote:FireServer(tar.Character:FindFirstChildOfClass'Humanoid')
+                if v:FindFirstChild'Attack' and plr.Character:FindFirstChildOfClass'Humanoid' then
+                    plr.Character:FindFirstChildOfClass'Humanoid':LoadAnimation(v.Attack):Play()
+                end
+                if v:FindFirstChild'Blade' then
+                    for _,x in next,v.Blade:GetChildren() do
+                        if x:IsA'Sound' then
+                            x:Play()
+                        end
+                    end
+                end
+            elseif v:IsA'Tool' and v.Name == 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'ReplicateRemote' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' and tar and tar.Character and tar.Character:FindFirstChild'HumanoidRootPart' then
+                v.Parent = plr.Character
+                AddCd(v,2)
+                rs:wait()
+                Shoot(v.Barrel.Attachment.WorldPosition,tar.Character.HumanoidRootPart.Position,v)
+                v.ReplicateRemote:FireServer(tar.Character.HumanoidRootPart.Position)
+            end
+        end
+    elseif key == 'c' and plr:FindFirstChild'Backpack' then
+        local guns = 0
+        for _,v in next,plr.Backpack:GetChildren() do
+            if guns<= 10 and plr.Character and plr.Character:FindFirstChild'Head' and v.Name == 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'ReplicateRemote' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' then
+                guns = guns+1
+                AddCd(v,2)
+                v.Parent = plr.Character
+                Shoot(plr.Character.Head.Position,mouse.Hit.p,v)
+                v.ReplicateRemote:FireServer(mouse.Hit.p)
+                v.Parent = plr.Backpack
+            end
+        end
+    elseif key == 'v' then
+        for _,v in next,plr.Backpack:GetChildren() do
+            if plr.Character and plr.Character:FindFirstChild'Head' and v.Name == 'Kawaii Revolver' and v:FindFirstChild'ReplicateRemote' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' then
+                AddCd(v,2)
+                v.Parent = plr.Character
+                Shoot(v.Barrel.Attachment.WorldPosition,mouse.Hit.p,v)
+                v.ReplicateRemote:FireServer(mouse.Hit.p)
+                rs:wait()
+                v.Parent = plr.Backpack
+            end
+        end
+    elseif key == 'l' and plr.Character then
+        Notify('Dupping','Time left: 25 sec',5)
+        spawn(function()
+            local c = 1
+            for i = 1,50 do
+                pcall(function()
+                    if c>#rep.Weapons:GetChildren() then
+                        c = 1
+                    end
+                end)
+                for _,v in next,plr.Character:GetChildren() do
+                    if v.Name == 'Loaded' and v:IsA'IntValue' then
+                        v:Destroy()
+                    end
+                end
+                for _,v in next,plr.PlayerGui:GetDescendants() do
+                    if v:IsA'RemoteEvent' and v.Name == 'RemoteEvent' then
+                        pcall(function()
+                            v:FireServer(rep.Weapons:GetChildren()[c].Name)
+                            c=c+1
+                        end)
+                    end
+                end
+                wait(0.5)
+            end
+        end)
+    end
+end)
+
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/1111-ssss/raw-script/main/UI_Library'))()
+
+local wd = library.CreateWindow({Name = "CHAOS Script"})
+local pg1 = wd.CreatePage({Name = "Main"})
+local pg2 = wd.CreatePage({Name = "Dupe"})
+local pg3 = wd.CreatePage({Name = "Credits"})
+  
+pg1.CreateToggle({
+    Name = "Ctrl Click Tp",
+    Callback = function(bool)
+        Ctrl_click_tp = bool
+    end
+})
+pg1.CreateButton({
+    Name = "Dupe (l)",
+    Callback = function()
+        Notify('Dupping','Time left: 25 sec',5)
+        spawn(function()
+            local c = 1
+            for i = 1,50 do
+                pcall(function()
+                    if c>#rep.Weapons:GetChildren() then
+                        c = 1
+                    end
+                end)
+                for _,v in next,plr.Character:GetChildren() do
+                    if v.Name == 'Loaded' and v:IsA'IntValue' then
+                        v:Destroy()
+                    end
+                end
+                for _,v in next,plr.PlayerGui:GetDescendants() do
+                    if v:IsA'RemoteEvent' and v.Name == 'RemoteEvent' then
+                        pcall(function()
+                            v:FireServer(rep.Weapons:GetChildren()[c].Name)
+                            c=c+1
+                        end)
+                    end
+                end
+                wait(0.5)
+            end
+        end)
+    end
+})
+pg1.CreateButton({
+    Name = "Godmode",
+    Callback = function()
+        Notify('Godmode','Loading... wait 5 sec.',5)
+        for _,v in next,plr.PlayerGui:GetChildren() do
+            if v:IsA'ScreenGui' and v.Name ~= 'Chat' and v.Name ~= 'BubbleChat' then
+                v.ResetOnSpawn = false
+                spawn(function()
+                    wait(5)
+                    plr.CharacterAdded:wait()
+                    if v then
+                        v:Destroy()
+                    end
+                end)
+            elseif v:IsA'LocalScript' then
+                v.Parent = plr
+                spawn(function()
+                    wait(5)
+                    v.Parent = plr.PlayerGui
+                end)
+            end
+        end
+        if plr.Character and plr.Character:FindFirstChildOfClass'Humanoid' then
+            if plr.Character:FindFirstChild'Ragdolled' and plr.Character.Ragdolled:FindFirstChildOfClass'Script' then
+                plr.Character.Ragdolled:FindFirstChildOfClass'Script':Destroy()
+            end
+            local char = plr.Character
+            char.Archivable = true
+            local new = char:Clone()
+            new.Parent = workspace
+            plr.Character = new
+            wait(2)
+            local oldhum = char:FindFirstChildOfClass'Humanoid'
+            local newhum = oldhum:Clone()
+            newhum.Parent = char
+            newhum.RequiresNeck = false
+            oldhum.Parent = nil
+            wait(2)
+            plr.Character = char
+            new:Destroy()
+            wait(1)
+            newhum:GetPropertyChangedSignal('Health'):Connect(
+                function()
+                    if newhum.Health <= 0 then
+                        oldhum.Parent = plr.Character
+                        wait(1)
+                        oldhum:Destroy()
+                    end
+                end)
+            workspace.CurrentCamera.CameraSubject = char
+        end
+        Notify('Godmode','Godmode loaded',3)
+    end
+})
+pg1.CreateButton({
+    Name = "Lock Nearest (r)",
+    Callback = function()
+        tar = nil
+        for _,v in next,workspace:GetDescendants() do
+            if v.Name == 'SelectedPlayer' then
+                v:Destroy()
+            end
+        end
+        local n_plr, dist
+        for _, v in pairs(game.Players:GetPlayers()) do
+            if v ~= plr and plr.Character and plr.Character:FindFirstChild'HumanoidRootPart' then
+                local distance = v:DistanceFromCharacter(plr.Character.HumanoidRootPart.Position)
+                if v.Character and (not dist or distance <= dist) and v.Character:FindFirstChildOfClass'Humanoid' and v.Character:FindFirstChildOfClass'Humanoid'.Health>0 and v.Character:FindFirstChild'HumanoidRootPart' then
+                    dist = distance
+                    n_plr = v
+                end
+            end
+        end
+        local sp = Instance.new('SelectionBox',n_plr.Character.HumanoidRootPart)
+        sp.Name = 'SelectedPlayer'
+        sp.Adornee = n_plr.Character.HumanoidRootPart
+        tar = n_plr
+    end
+})
+pg1.CreateButton({
+    Name = "Hit Locked (q)",
+    Callback = function()
+        for _,v in next,plr.Character:GetDescendants() do
+            if v:IsA'Tool' and v.Name ~= 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'DamageRemote' and v:FindFirstChild'Cooldown' and tar and tar.Character and tar.Character:FindFirstChildOfClass'Humanoid' then
+                AddCd(v,v.Cooldown.Value)
+                v.DamageRemote:FireServer(tar.Character:FindFirstChildOfClass'Humanoid')
+                if v:FindFirstChild'Attack' and plr.Character:FindFirstChildOfClass'Humanoid' then
+                    plr.Character:FindFirstChildOfClass'Humanoid':LoadAnimation(v.Attack):Play()
+                end
+                if v:FindFirstChild'Blade' then
+                    for _,x in next,v.Blade:GetChildren() do
+                        if x:IsA'Sound' then
+                            x:Play()
+                        end
+                    end
+                end
+            elseif v:IsA'Tool' and v.Name == 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'ReplicateRemote' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' and tar and tar.Character and tar.Character:FindFirstChild'HumanoidRootPart' then
+                v.Parent = plr.Character
+                AddCd(v,2)
+                rs:wait()
+                Shoot(v.Barrel.Attachment.WorldPosition,tar.Character.HumanoidRootPart.Position,v)
+                v.ReplicateRemote:FireServer(tar.Character.HumanoidRootPart.Position)
+            end
+        end
+    end
+})
+pg1.CreateButton({
+    Name = "Sniper Rifle (c)",
+    Callback = function()
+        wait(2)
+        local guns = 0
+        for _,v in next,plr.Backpack:GetChildren() do
+            if guns<=10 and plr.Character and plr.Character:FindFirstChild'Head' and v.Name == 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'ReplicateRemote' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' then
+                guns = guns+1
+                AddCd(v,2)
+                v.Parent = plr.Character
+                Shoot(plr.Character.Head.Position,mouse.Hit.p,v)
+                v.ReplicateRemote:FireServer(mouse.Hit.p)
+                v.Parent = plr.Backpack
+            end
+        end
+    end
+})
+pg1.CreateButton({
+    Name = "Minigun (v)",
+    Callback = function()
+        wait(2)
+        local c_ = 0
+        for _,v in next,plr.Backpack:GetChildren() do
+            c_=c_+1
+            if c_>=10 then rs:wait() c_=0 end
+            if plr.Character and plr.Character:FindFirstChild'Head' and v.Name == 'Kawaii Revolver' and v:FindFirstChild'ReplicateRemote' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' then
+                AddCd(v,2)
+                v.Parent = plr.Character
+                Shoot(v.Barrel.Attachment.WorldPosition,mouse.Hit.p,v)
+                v.ReplicateRemote:FireServer(mouse.Hit.p)
+                rs:wait()
+                v.Parent = plr.Backpack
+            end
+        end
+    end
+})
+pg2.CreateButton({
+    Name = "Spam C4",
+    Callback = function()
+        wait(1)
+        for _,v in next,plr.Backpack:GetChildren() do
+            if v.Name == 'C4' then
+                pcall(function()
+                    v.Parent = plr.Character
+                    rs:wait()
+                    v.RemoteEvent:FireServer()
+                end)
+            end
+        end
+    end
+})
+pg2.CreateButton({
+    Name = "Spam Grenade",
+    Callback = function()
+        wait(1)
+        for _,v in next,plr.Backpack:GetChildren() do
+            if v.Name == 'Grenade' then
+                pcall(function()
+                    v.Parent = plr.Character
+                    rs:wait()
+                    v.RemoteEvent:FireServer(mouse.Hit.LookVector)
+                end)
+            end
+        end
+    end
+})
+pg2.CreateButton({
+    Name = "Spam Trap",
+    Callback = function()
+        wait(1)
+        for _,v in next,plr.Backpack:GetChildren() do
+            if v.Name == 'Spiked Trap' then
+                pcall(function()
+                    v.Parent = plr.Character
+                    rs:wait()
+                    v:Activate()
+                end)
+            end
+        end
+    end
+})
+pg2.CreateButton({
+    Name = "Lag Others (100+ guns)",
+    Callback = function()
+        wait(2)
+        local c_
+        for _,v in next,plr.Backpack:GetChildren() do
+            c_=c_+1
+            if c_>=10 then rs:wait() c_=0 end
+            if plr.Character and plr.Character:FindFirstChild'Head' and v.Name == 'Kawaii Revolver' and not v:FindFirstChild'ClientCD' and v:FindFirstChild'ReplicateRemote' and v:FindFirstChild'Barrel' and v.Barrel:FindFirstChild'Attachment' then
+                AddCd(v,2)
+                v.Parent = plr.Character
+                Shoot(plr.Character.Head.Position,mouse.Hit.p,v)
+                v.ReplicateRemote:FireServer(mouse.Hit.p)
+                v.Parent = plr.Backpack
+            end
+        end
+    end
+})
+pg3.CreateButton({
+    Name = "Made by KAKOYTO_LOXX",
+    Callback = function()
+        Notify('Credits','Script made by KAKOYTO_LOXX',5)
+    end
+})
+end)
+
+Tab1Section:NewButton("Slap battle gui", "Credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+end)
+
+Tab4Section:NewButton("Fe PY HUB", "Credits to Owner", function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/PYXDYT/PY-HUB-V1-UI/693e3e68daca7d8e9907f6034bc1b5f4183c04a5/PY%20HUB%20V1'),true))()
+end)
+
+Tab2Section:NewButton("Impossible Glass Bridge Obby", "Credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/T7CqyjEW'))()
+end)
+
+Tab1Section:NewButton("Fall Block", "Credits to Ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/cjqpc67A'))()
+end)
+
+Tab4Section:NewButton("Fe Blue Flame needs hats", "sussy hats", function()
+   loadstring(game:HttpGet(('https://pastebin.com/raw/U2VHEdFB'),true))()
+end)
+
+Tab4Section:NewButton("adopt me Ride all pets", "it's Fe", function()
+   local clientData = require(game.ReplicatedStorage.ClientModules.Core.ClientData)
+local playerData = clientData.get_data()[tostring(game.Players.LocalPlayer)]
+for i,v in pairs(playerData.inventory.pets) do
+v.properties.rideable = true
+v.properties.flyable = true
+end
+end)
+
+Tab2Section:NewButton("British Hub", "credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/YourLocalNzi/Ye/main/Bri%20hub"))()
 end)
