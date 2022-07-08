@@ -3139,7 +3139,8 @@ Tab4Section:NewButton("Fe pigboy power armor", "credits to respectful Owner", fu
 --not by Orplayz, orplayz is a skid!!!
 --Nil is pog ngl
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BonzaiBazooka/FEScripts/main/message-9.txt"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BonzaiBazooka/FEScripts/main/message-9.txt"))()
+end)
 
 Tab1Section:NewButton("Blox fruit silent aim needs keyboard script", "L to lock player and p to reset your lock", function()
    getgenv().setting = { Fov = 50, Color = Color3.fromRGB(191, 255, 209), LockPlayers = false, LockPlayersBind = Enum.KeyCode.L, resetPlayersBind = Enum.KeyCode.P, } loadstring(game:HttpGet('https://raw.githubusercontent.com/Besty191/MAZI-API/main/Blox_Fruit_Silent_Aim'))()
