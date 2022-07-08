@@ -3161,7 +3161,3 @@ end)
 Tab4Section:NewButton("Fe invisible", "works on some games", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/WrrBWZpb"))()
 end)
-
-Tab4Section:NewButton("Fe slime needs hat", "Join our discord server to get hat", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/8au9a67j"))()
-end)
