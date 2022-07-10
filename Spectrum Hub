@@ -21,6 +21,7 @@ local Tab6 = Window:NewTab("Credits")
 local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8091")
 local Tab6Section = Tab6:NewSection("Join our discord for updates")
 local Tab6Section = Tab6:NewSection("credits to GamingScripter#9250 for kavo tutorial")
+local Tab6Section = Tab6:NewSection("credits to kavo ui")
 
 Tab1Section:NewButton("da hood", "credits to nukermode", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
@@ -3160,4 +3161,28 @@ end)
 
 Tab4Section:NewButton("Fe invisible", "works on some games", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/WrrBWZpb"))()
+end)
+
+Tab1Section:NewButton("thief simulator", "credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/mciuTW0Y'))()
+end)
+
+Tab4Section:NewButton("you can see people private chat Fe", "credits to Owner", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/thzX6hnY"))()
+end)
+
+Tab1Section:NewButton("Fe piano gui", "Credits to Owner", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/HubbyScripts/Auto-Piano-Hub-V6/main/Auto%20Piano%20Hub%20V6"))()
+end)
+
+Tab2Section:NewButton("DoomSpire BrickBattle Classic", "Credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/4tiabMuy'))()
+end)
+
+Tab1Section:NewButton("weapon simulator 2", "Credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Weapon%20Simulator%202'))()
+end)
+
+Tab4Section:NewButton("Fe Jetpack", "Credits to Py XD", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/PYXDYT/FE-JET/main/V1'))()
 end)
