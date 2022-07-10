@@ -3155,7 +3155,7 @@ Tab1Section:NewButton("game teleporter", "you have to place game place id to tp"
    loadstring(game:HttpGet('https://pastebin.com/raw/hiWAdBMa'))()
 end)
 
-Tab2Sectiob:NewButton("Tower of jump gui", "credits to ghostplayer", function()
+Tab2Section:NewButton("Tower of jump gui", "credits to ghostplayer", function()
    loadstring(game:HttpGet('https://pastebin.com/raw/sPmNjBNu'))()
 end)
 
