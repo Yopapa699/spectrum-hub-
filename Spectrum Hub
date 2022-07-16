@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("Spectrum Hub", "BloodTheme")
 
 
-local Tab1 = Window:NewTab("MAIN")
+local Tab1 = Window:NewTab("main")
 local Tab1Section = Tab1:NewSection("scripts")
 
 local Tab2 = Window:NewTab("others")
@@ -18,10 +18,11 @@ local Tab5 = Window:NewTab("Discord")
 local Tab5Section = Tab5:NewSection("Join our discord to get new updates")
 
 local Tab6 = Window:NewTab("Credits")
-local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8091")
-local Tab6Section = Tab6:NewSection("Join our discord for updates")
-local Tab6Section = Tab6:NewSection("credits to GamingScripter#9250 for kavo tutorial")
-local Tab6Section = Tab6:NewSection("credits to kavo ui")
+local Tab6Section = Tab6:NewSection("this hub was made by HappyCat#8091 and some helpers")
+local Tab6Section = Tab6:NewSection("Join our discord to get new updates")
+local Tab6Section = Tab6:NewSection("Credits to GamingScripter#9250 for kavo tutorial")
+local Tab6Section = Tab6:NewSection("Credits to kavo ui library")
+local Tab6Section = Tab6:NewSection("Credits to my helpers for suggesting scripts")
 
 Tab1Section:NewButton("da hood", "credits to nukermode", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Allvideo/test/main/Whitelist.txt"))()
@@ -68,7 +69,7 @@ Tab3Section:NewToggle("walkspeed", "sussyspeed", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
     else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 15
     end
 end)
 
@@ -2644,7 +2645,7 @@ q - shoot/hit locked player
 l - dupe tools
 v - minigun (dupped tools required)
 c - sniper rifle (dupped tools required)
-]]
+]]--
 
 local Ctrl_click_tp = false
 local plrs = game:GetService'Players'
@@ -3219,25 +3220,7 @@ Tab4Section:NewButton("Fe bird The Bird Says needed", "it's a accosories", funct
    loadstring(game:HttpGet("https://raw.githubusercontent.com/OfficialKenfy/Bird/main/bird.r"))()
 end)
 
-Tab1Section:NewButton("Basketball simulator inf money", "Credits to ziroponto", function()
-   local args = {
-   [1] = "range",
-   [2] = -501
-}
-
-game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.2").knit.Services.LevelService.RF.LevelAbility:InvokeServer(unpack(args))
-wait(0.2)
-local args = {
-   [1] = "range",
-   [2] = "1"
-}
-
-game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.2").knit.Services.LevelService.RF.LevelAbility:InvokeServer(unpack(args))
-wait(0.3)
-local args = {
-   [1] = "range",
-   [2] = 501
-}
-
-game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.2").knit.Services.LevelService.RF.LevelAbility:InvokeServer(unpack(args))
+Tab4Section:NewButton("Fe slasher", "need keyboard", function()
+   loadstring(game:HttpGet(('https://pastefy.ga/CmEmsk1C/raw'),true))()
 end)
+   
