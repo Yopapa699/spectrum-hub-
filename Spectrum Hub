@@ -3223,4 +3223,37 @@ end)
 Tab4Section:NewButton("Fe slasher", "need keyboard", function()
    loadstring(game:HttpGet(('https://pastefy.ga/CmEmsk1C/raw'),true))()
 end)
-   
+
+Tab2Section:NewButton("Andy's musical chair", "Credits to ghostplayer", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Musical%20Chairs'))()
+end)
+
+Tab1Section:NewButton("Shindo life", "Credits to Premier Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+end)
+
+Tab4Section:NewButton("Fe Relax Coffe", "Credits to Owner", function()
+   loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\87\67\122\57\104\54\69\51\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Tab4Section:NewButton("Fe Minecraft ghast", "Credits to Owner", function()
+   loadstring(game:HttpGet('https://pastefy.ga/zFn0z6VV/raw'))()
+end)
+
+Tab4Section:NewButton("Fe Ink Monster", "Credits to Owner", function()
+   function rmesh(a)
+if not (workspace[game.Players.LocalPlayer.Name][a].Handle:FindFirstChild('Mesh') or workspace[game.Players.LocalPlayer.Name][a].Handle:FindFirstChild('SpecialMesh')) then return end
+old=game.Players.LocalPlayer.Character
+game.Players.LocalPlayer.Character=workspace[game.Players.LocalPlayer.Name]
+for i,v in next, workspace[game.Players.LocalPlayer.Name]:FindFirstChild(a).Handle:GetDescendants() do
+if v:IsA('Mesh') or v:IsA('SpecialMesh') then
+v:Remove()
+end
+end
+for i = 1 , 2 do
+game.Players.LocalPlayer.Character=old
+end
+end
+
+HumanDied = false for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do if v:IsA("BasePart") and v.Name ~= 'Torso' and v.Name ~= 'Head' then  _G.netless=game:GetService("RunService").Heartbeat:connect(function() v.AssemblyLinearVelocity = Vector3.new(-30,0,0) sethiddenproperty(game.Players.LocalPlayer,"MaximumSimulationRadius",math.huge) sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",999999999) end) end en
+end)
