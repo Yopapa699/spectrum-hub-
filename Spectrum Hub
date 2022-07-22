@@ -3239,21 +3239,3 @@ end)
 Tab4Section:NewButton("Fe Minecraft ghast", "Credits to Owner", function()
    loadstring(game:HttpGet('https://pastefy.ga/zFn0z6VV/raw'))()
 end)
-
-Tab4Section:NewButton("Fe Ink Monster", "Credits to Owner", function()
-   function rmesh(a)
-if not (workspace[game.Players.LocalPlayer.Name][a].Handle:FindFirstChild('Mesh') or workspace[game.Players.LocalPlayer.Name][a].Handle:FindFirstChild('SpecialMesh')) then return end
-old=game.Players.LocalPlayer.Character
-game.Players.LocalPlayer.Character=workspace[game.Players.LocalPlayer.Name]
-for i,v in next, workspace[game.Players.LocalPlayer.Name]:FindFirstChild(a).Handle:GetDescendants() do
-if v:IsA('Mesh') or v:IsA('SpecialMesh') then
-v:Remove()
-end
-end
-for i = 1 , 2 do
-game.Players.LocalPlayer.Character=old
-end
-end
-
-HumanDied = false for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do if v:IsA("BasePart") and v.Name ~= 'Torso' and v.Name ~= 'Head' then  _G.netless=game:GetService("RunService").Heartbeat:connect(function() v.AssemblyLinearVelocity = Vector3.new(-30,0,0) sethiddenproperty(game.Players.LocalPlayer,"MaximumSimulationRadius",math.huge) sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",999999999) end) end en
-end)
